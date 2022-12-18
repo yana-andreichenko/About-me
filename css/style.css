@@ -483,7 +483,7 @@ nav {
 	color: #606060;
 	font-size: 2.7vh;
 	padding-left: 4%;
-	padding-top: 0.5vh;
+	padding-top: 1vh;
 	font-weight: bold;
 	text-align: left;
 	max-height: 100%;
@@ -518,6 +518,32 @@ nav {
 	font-weight: bold;
 	border: 1px solid #606060;
 	border-radius: 2px;
+}
+input:invalid {
+	border: 2px solid #ff0000;
+	box-shadow: 0 0 5px 1px red;
+}
+textarea:invalid {
+	border: 2px solid #ff0000;
+	box-shadow: 0 0 5px 1px red;
+}
+input:invalid:required {
+	background-image: linear-gradient(to left, #fff2f2, white);
+}
+textarea:invalid:required {
+	background-image: linear-gradient(to left, #fff2f2, white);
+}
+input:required:focus:valid {
+	background: #a4ff9c;
+}
+textarea:required:focus:valid {
+	background: #a4ff9c;
+}
+input:focus:invalid {
+	background: #ffc2c2;
+}
+textarea:focus:invalid {
+	background: #ffc2c2;
 }
 .social {
 	margin-top: 1px;
